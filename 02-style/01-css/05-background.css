@@ -1,0 +1,52 @@
+.box {
+  height: 150px;
+  border: 4px solid;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* background-color */
+.bg-color {
+  background-color: teal;
+}
+
+/* background-clip 범위 */
+.clip {
+  background-color: orange;
+  border: 10px dashed;
+}
+
+.content-box {
+  background-clip: content-box;
+}
+
+.padding-box {
+  background-clip: padding-box;
+}
+
+.border-box {
+  /* 기본값 */
+  background-clip: border-box;
+}
+
+/* background-image */
+/* 다른 폴더에 있는 이미지 경로 불러오는 법 - url(../파일명/이미지명) */
+.bg-image {
+  background-image: url(img/pnada.jpg);
+  /* cover : 빈 여백을 다 채움(사진이 잘려도 여백을 채움), contain 여백이 생겨도 이미지를 잘리지 않게 맞춰서 채움 */
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/* gradient */
+.bg-gradient {
+  /* 각도, 색상1, 색상2 (색상은 추가 가능) */
+  background: linear-gradient(90deg, red, blue, orange);
+}
+
+.bg-radial {
+  background: (circle, #00c6ff, #0072ff);
+}
