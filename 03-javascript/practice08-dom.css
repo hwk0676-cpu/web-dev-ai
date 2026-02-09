@@ -1,0 +1,31 @@
+body {
+  background-color: pink;
+}
+
+.txt01 {
+  font-size: 28px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+  font-weight: bold;
+}
+
+.txt02 {
+  font-size: 45px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.txt03 {
+  font-size: 28px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
