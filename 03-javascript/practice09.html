@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="practice09.css" />
+  </head>
+  <body>
+    <h1>그림 맞추기 게임</h1>
+    <h2>버튼을 클릭하면, 그림이 출력 됩니다. 모두 같은 그림이 나오면 승리!</h2>
+    <div class="container" id="container">
+      <img id="img01" onclick="clickRD()" src="img/spy1.jpg" alt="" />
+      <img id="img02" onclick="clickRD()" src="img/spy2.jpg" alt="" />
+      <img id="img03" onclick="clickRD()" src="img/spy3.jpg" alt="" />
+    </div>
+    <div class="bt_box">
+      <!-- setAttribute("disabled", "disabled") -->
+      <!-- setAttribute("disabled", "true") -->
+      <button class="bt01">Click</button>
+      <button class="bt02">Restart</button>
+    </div>
+    <h3></h3>
+
+    <script src="practice09.js"></script>
+  </body>
+</html>
