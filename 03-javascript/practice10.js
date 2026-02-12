@@ -192,6 +192,24 @@ bt01.addEventListener("click", () => {
     phoneValue
   ) {
     alert("회원가입 완료!");
+    // localStorage 저장
+    // localStorage.setItem("id", id.value);
+    // localStorage.setItem("pwd", pwd.value);
+    // localStorage.setItem("uName", uName.value);
+    // localStorage.setItem("email", email.value);
+    // localStorage.setItem("phone", phone.value);
+
+    const user = {
+      id: id.value,
+      pwd: pwd.value,
+      uName: uName.value,
+      email: email.value,
+      phone: phone.value,
+    };
+
+    localStorage.setItem("user", JSON.stringify(user));
+    alert("회원가입 완료, 로그인 페이지로 이동하겠습니다");
+    location.href = "practice11-login.html";
   } else {
     alert("다시 입력해주세요");
   }
@@ -199,6 +217,7 @@ bt01.addEventListener("click", () => {
 bt02.addEventListener("click", () => {
   //취소 버튼 눌렀을 때 상호작용
   location.reload();
+  localStorage.clear();
 });
 
 // /^[a-zA-Z0-9]{4,12}$/
